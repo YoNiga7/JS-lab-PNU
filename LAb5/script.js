@@ -75,13 +75,13 @@
     function getSquareSize(difficulty) {
       switch (difficulty) {
         case 'easy':
-          return 50;
+          return 80;
         case 'medium':
-          return 35;
-        case 'hard':
-          return 20;
-        default:
           return 50;
+        case 'hard':
+          return 35;
+        default:
+          return 80;
       }
     }
 
