@@ -58,6 +58,18 @@
       square.style.width = `${squareSize}px`;
       square.style.height = `${squareSize}px`;
     }
+    square.addEventListener('click', function() {
+      restartTimer(); 
+  });
+  
+  startBtn.addEventListener('click', startGame);
+  
+  function restartTimer() {
+    clearInterval(countdownInterval);
+    timeLeft = getInitialTime(difficultySelect.value); 
+    updateTimer(); 
+    startCountdown(); 
+}
 
     function getInitialTime(difficulty) {
       switch (difficulty) {
