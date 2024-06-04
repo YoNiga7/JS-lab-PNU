@@ -32,13 +32,13 @@ Truck.prototype.trip = function() {
 
 console.log("Task 1.2.10");
 const truck1 = new Truck("Green", 10000, 110, "Renault", "Trafic");
-truck1.AssignDriver("Vlad Gerula", true, 3);
+truck1.AssignDriver("Bondar Kostiantyn", true, 3);
 
 console.log("Trip Truck1:");
 truck1.trip();
 
 const truck2 = new Truck("Yellow",11000, 95, "Renault", "Master");
-truck2.AssignDriver("Vlad Gerula", false, 1);
+truck2.AssignDriver("Bondar Kostiantyn", false, 1);
 
 console.log("Trip Truck2:");
 truck2.trip();
